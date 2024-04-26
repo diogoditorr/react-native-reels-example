@@ -39,6 +39,8 @@ const App = props => {
     NetInfo.fetch().then(handleConnectivityChange);
   };
 
+  console.log('Hello, world!')
+
   return (
     <AppContextProvider>
       <View style={CommonStyle.flexContainer}>

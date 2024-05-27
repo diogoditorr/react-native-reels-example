@@ -39,7 +39,7 @@ const VideoComponent = ({post, isVisible, isNext}) => {
       <Video
         ref={videoRef}
         fullscreenAutorotate={true}
-        source={url}
+        source={typeof url === 'string' ? { uri: url } : url}
         autoPlay={true}
         repeat={true}
         onError={videoError}
